@@ -7,7 +7,7 @@ jobs:
       - name: To get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Test application
         run: npm run test
   lint:
@@ -16,7 +16,7 @@ jobs:
       - name: To get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Lint application
         run: npm run lint
   build:
@@ -25,7 +25,7 @@ jobs:
       - name: To get the repository code
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build application
         run: npm run build
       - name: Deploy
